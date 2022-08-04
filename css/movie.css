@@ -1,0 +1,996 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+button{
+    border: none;
+}
+body{
+    background: #f1f1f1;
+}
+/* -------- */
+header{
+    box-shadow: 0px 3px 5px rgba(164, 154, 154, 0.576);
+    position: relative;
+}
+.bg{
+    background-color: #fff;
+    border-top: 7px solid black;
+}
+/* 导航栏 */
+.nav{
+    width: 1200px;
+    margin: 0px auto;
+    /* overflow: hidden; */
+    height: 75px;
+    position: relative;
+}
+.nav1{
+    float: left;
+    width: 253px;    
+}
+header h1{
+    width: 131px;
+    height: 83px;
+    background: url(../images/sprite.png) no-repeat 0px -1337px;
+    position: absolute;
+    left: 0px;
+    top: -8px;
+    cursor: pointer;
+}
+.address{
+    width: 91px;
+    height: 27px;
+    color: #c9cacb;
+    border: 1px solid #c9cacb;
+    border-radius: 50px;
+    float: right;
+    margin-top: 25px;
+    text-align: center;
+    line-height: 27px;
+}
+.address:hover{
+    color: #707279;
+    border: 1px solid #707279;
+}
+.address p{
+    cursor: pointer;
+}
+
+
+
+.city{
+    width: 600px;
+    height: 150px;
+    position: absolute;
+    top: 25px;
+    left: 25%;
+    display: none;
+    background: #fff;
+    z-index: 99;
+    color: #000;
+}
+.city>span{
+    position: absolute;
+    top: 20px;
+    right: 40px ;
+    color: #666;
+    cursor: pointer;
+    font-size: 30px;
+}
+.navcity{
+    overflow: hidden;
+    background-color: #ddd;
+    width: 550px;
+    height: 50px;
+    margin: 15px 25px;
+}
+.navcity li{
+    float: left;
+    /* width: 55px; */
+    height: 20px;
+    margin-top: 10px;
+    padding: 10px 15px;
+    background: #ddd; 
+    cursor: pointer;
+}
+.navcity li:nth-of-type(1){
+    margin-left: 20px;
+}
+.opencitybox1{
+    width: 550px;
+    overflow: hidden;
+    margin-left: 25px;
+    display: none;
+}
+.mycurrent1{
+    background: #fff !important; 
+}
+.mycurrent2{
+    display: block;
+}
+.opencitybox1 li{
+    float: left;
+    padding: 15px 10px;
+    cursor: pointer;
+}
+
+.opencity{
+    display: block;
+}
+.opencity2{
+    display: none;
+}
+/* ------------- */
+/* 模态窗口 */
+/* 遮罩层 */
+#shade {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .3);
+    z-index: 99;
+}
+#longinbox {
+    position: absolute;
+    top: 30px;
+    left: 29%;
+    display: none;
+    width: 540px;
+    border: 1px solid rgb(216, 216, 216);
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(10, 20, 20, .2), -5px -5px 10px rgba(10, 20, 20, .2);
+    background-color: #fff;
+    z-index: 99;
+}
+.title>span{
+    position: absolute;
+    top: 0px;
+    right: 10px;
+    display: block;
+    font-size: 30px;
+    color: #d08c5f;
+    cursor: pointer;
+}
+.title>div{
+    width: 177px;
+    height: 62px;
+    background: url(../images/sprite.png)no-repeat 0px -1275px;
+    margin: 30px 34%;
+}
+.title>p{
+    text-align: center;
+    color: #ddd;
+    font-size: 18px;
+}
+.title>p span:nth-of-type(2){
+    margin: 0px 50px;
+}
+#longinbox>form{
+    text-align: center;
+}
+.formdiv1,.formdiv2{
+    margin: 40px;
+}
+.formdiv1 input,.formdiv2 input {
+    width: 250px;
+    height: 35px;
+    margin-left: 20px;
+    color: #000;
+    border: 1px solid #ddd;
+    font-size: 16px;
+    outline: none;
+    border-radius: 3px;
+    padding-left:10px;
+}
+.formdiv1 input:focus,.formdiv2 input:focus{
+    box-shadow: 0 0 7px rgb(114, 167, 241);
+}
+.login-but{
+    width: 325px;
+    height: 35px;
+    background-color: #fb7b27;
+    color: #fff;
+    border-radius: 2px;
+    border: none;
+    cursor: pointer;
+}
+.nopassword{
+    width: 325px;
+    overflow: hidden;
+    margin: 40px auto;
+}
+.nopassword>span{
+    float: left;
+}
+.nopassword>span:nth-of-type(2){
+    color: #666;
+    margin-left: 100px;
+}
+.nopassword a{
+    color: red;
+}
+/* 注册模态窗口 */
+#regiterbox {
+    position: absolute;
+    top: 30px;
+    left: 29%;
+    display: none;
+    width: 540px;
+    border: 1px solid rgb(216, 216, 216);
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(10, 20, 20, .2), -5px -5px 10px rgba(10, 20, 20, .2);
+    background-color: #fff;
+    z-index: 99;
+}
+.title2>span{
+    position: absolute;
+    top: 0px;
+    right: 10px;
+    display: block;
+    font-size: 30px;
+    color: #d08c5f;
+    cursor: pointer;
+}
+.title2>div{
+    width: 177px;
+    height: 62px;
+    background: url(../images/sprite.png)no-repeat 0px -1275px;
+    margin: 30px 34%;
+}
+#regiterbox>form{
+    text-align: center;
+}
+#regiterbox>form>div{
+    overflow: hidden;
+    width: 315px;
+    margin: 40px auto;
+}
+#regiterbox>form>div>label{
+    display: block;
+    width: 80px;
+    height: 25px;
+    float: left;
+    text-align: left;
+    line-height: 65px;
+}
+#regiterbox>form>div>input{
+    width: 200px;
+    height: 35px;
+    margin: 10px;
+    color: #000;
+    border: 1px solid #ddd;
+    font-size: 16px;
+    outline: none;
+    border-radius: 3px;
+    padding-left:10px;
+    float: right;
+}
+#rformdiv3{
+   overflow: hidden;
+}
+#rformdiv3 div{
+    float: right;
+    overflow: hidden;
+    margin-right: 10px;
+}
+#rformdiv3>label{
+    line-height: 45px !important;
+}
+#rformdiv3 div input:nth-of-type(1){
+    float: left;
+    width: 100px;
+    height: 35px;
+    color: #000;
+    border: 1px solid #ddd;
+    border-right: none;
+    font-size: 16px;
+    outline: none;
+    border-radius: 3px 0px 0px 3px;
+    padding-left:10px;
+}
+#rformdiv3 div input:nth-of-type(2) {
+    float: left;
+    width: 100px;
+    height: 37px;
+    color: #fff;
+    border: 1px solid #ddd;
+    border-left: none;
+    font-size: 16px;
+    outline: none;
+    border-radius: 0px 3px 3px 0px;
+    padding-left:10px;
+    background: #fb7b27;
+    cursor: pointer;
+    padding: 0px;
+}
+/* #rformdiv3 div input:nth-of-type(2)::placeholder {
+    color: #fff;
+} */
+#regiterbox input:focus{
+    box-shadow: 0 0 7px rgb(114, 167, 241);
+}
+.regiter-but{
+    width: 325px;
+    height: 35px;
+    background-color: #fb7b27;
+    color: #fff;
+    border-radius: 2px;
+    border: none;
+    cursor: pointer;
+}
+
+.nopassword2{
+    width: 325px;
+    overflow: hidden;
+    margin: 40px auto;
+}
+.nopassword2 span:nth-of-type(1){
+    float: left;
+}
+.nopassword2 span:nth-of-type(1) a{
+    color: #666;
+}
+.nopassword2 span:nth-of-type(2){
+    float: right;
+}
+.nopassword2 span:nth-of-type(2) a{
+    color: red;
+}
+
+/* ---------- */
+
+
+.nav2{
+    float: right;
+    overflow: hidden;
+}
+.navleft{
+    float: left;
+    margin-right: 340px;
+}
+.navleft a h3:hover{
+    color: #ff7b0f;
+}
+.navright{
+    float: right;
+}
+.navright a h3:hover{
+    color: #ff7b0f;
+}
+.navleft a {
+    float: left;
+    text-decoration: none;
+    padding-left: 25px;
+    line-height: 75px;
+    color: #929292;
+    font-size: 18px;
+    font-weight: bold;
+}
+.navcurrent{
+    color: #ff7b0f !important;
+}
+.navright a{
+    float: left;
+    text-decoration: none;
+    padding-left: 25px;
+    line-height: 75px;
+    color: #929292;
+    font-size: 18px;
+    font-weight: bold;
+}
+.new{
+    overflow: hidden;
+    line-height: 50px;
+    border-bottom: 1px solid #1234;
+    margin-right: 20px;
+}
+.new>p{
+    float: left;
+}
+.new a{
+    float: right;
+}
+
+.new span a{
+    color: #919191;
+    line-height: 26px;
+    border: 1px solid #c9cacb;
+    border-radius: 30px;
+    width: 50px;
+    height: 26px;
+    display: block;
+    text-align: center;
+    font-size: 14px;
+    margin-top: 15px;
+}
+.new span a:hover{
+    color: #fb7b28;
+    border:1px solid #fb7b28;
+}
+.newul1{
+width: 207px;
+float: left;
+}
+.newul1 li{
+    margin-top: 30px;
+}
+.newul1 a{
+    font-size: 12px;
+    color: #383838;
+
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1; /* 限制在一个块元素显示的文本的行数 */
+    -webkit-box-orient: vertical; /* 垂直排列 */
+    word-break: break-all;  /* 内容自动换行 */
+}
+.newul1 a:hover{
+    color: #fb7b28;
+}
+.newul2{
+    margin-right: 25px;
+}
+.newul2 li{
+    margin-top: 30px;
+    text-align: right;
+}
+.newul2 a{
+    font-size: 12px;
+    color: #383838;
+
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1; /* 限制在一个块元素显示的文本的行数 */
+    -webkit-box-orient: vertical; /* 垂直排列 */
+    word-break: break-all;  /* 内容自动换行 */  
+
+}
+.newul2{
+float: right;
+}
+
+/* ---------------------------------------- */
+/* ---------------------------------------- */
+/* ---------------------------------------- */
+/* ---------------------------------------- */
+section{
+    width: 1200px;
+    background: #fff;
+    margin: 0px auto;
+    overflow: hidden;
+}
+/* --- */
+
+.left{
+    width: 852px;
+    margin-left: 21px;
+    margin-right: 25px;
+    float: left;
+    position: relative;
+}
+
+/* ---- */
+.leftone{
+    border-bottom: 1px solid #eee;
+   
+    overflow: hidden;
+}
+.leftone p{
+    font-size: 18px;
+    margin: 20px 0px 5px 15px;
+    float: left;
+}
+.left>span{
+    display: block;
+    width: 7px;
+    height: 5px;
+    background: url(../images/sprite.png)no-repeat 0px -850px;
+    position: absolute;
+    top: 46px;
+    left: 36px;
+}
+.leftone>div{
+    float: right;
+    margin: 15px 0px 0px 0px;
+}
+.leftone>div input{
+    width: 157px;
+    height: 26px;
+    border-radius: 20px;
+    outline: none;
+    border: 1px solid #ddd;
+    padding: 0px 0px 0px 10px;
+    font-size: 12px;
+}
+.leftone>div button:hover{
+    box-shadow: 0px 0px 10px rgba(234, 20, 20, 0.576);
+}
+.leftone>div button{
+    width: 68px;
+    height: 26px;
+    border-radius: 20px;
+    background: #f87a27;
+    color: #fff;
+    margin: 0px 10px 0px 0px;
+}
+/* ----- */
+#box3{
+    overflow: hidden;
+    margin: 30px 0px 0px 15px;
+}
+#box3 li{
+    width: 102px;
+    color: #666;
+    font-size: 12px;
+    cursor: pointer;
+    float: left;
+    margin-bottom: 15px;
+}
+
+/* ---- */
+.leftthree{
+    border-bottom: 1px solid #eee;
+    position: relative;
+}
+.leftthree p{
+    font-size: 18px;
+    margin: 20px 0px 5px 15px;
+}
+.leftthree span{
+    display: block;
+    width: 7px;
+    height: 5px;
+    background: url(../images/sprite.png)no-repeat 0px -850px;
+    position: absolute;
+    top: 26px;
+    left: 36px;
+}
+/* ----- */
+#box4{
+    overflow: hidden;
+    margin: 30px 0px 0px 15px;
+}
+#box4 li{
+    width: 102px;
+    color: #666;
+    font-size: 12px;
+    cursor: pointer;
+    float: left;
+    margin-bottom: 15px;
+}
+.current1{
+    color: #fb7b27 !important;
+}
+/* --- */
+.leftfive{
+    background: #ddd;
+    overflow: hidden;
+    margin: 20px 0px 0px 0px;
+}
+.leftfive span:nth-of-type(1){
+    color: red;
+    font-size: 16px;
+    line-height: 40px;
+    margin-left: 10px;
+}
+.leftfive span:nth-of-type(2){
+    font-size: 12px;
+    color: #666;
+    line-height: 38px;
+}
+/* --- */
+.leftsix{
+    margin-bottom: 100px;
+}
+.leftsix li{
+    overflow: hidden;
+    border-bottom: 1px dashed #eee;
+}
+.leftsix li img{
+    float:left;
+    width: 260px;
+    height: 125px;
+    margin: 20px;
+    cursor: pointer;
+}
+.leftsix li>div{
+    float:left;
+    margin: 20px;
+}
+.movielist{
+    width: 490px;
+}
+.movielist>p{
+    font-size: 26px;
+    color: #666;
+}
+.movielist>div{
+    overflow: hidden;
+}
+.movielist>div p{
+    float: left;
+    font-size: 12px;
+}
+.movielist>div button{
+    float: right;
+    width: 82px;
+    height: 34px;
+    background: #ff7b05;
+    font-size: 12px;
+    color: #fff;
+    border-radius: 3px;
+    cursor: pointer;
+   
+}
+.movielist>div button:hover{
+    background-color: #d57531 ;
+}
+.spanlist{
+    margin-top: 25px;
+}
+.spanlist span{
+    font-size:12px
+}
+.spanlist span:nth-of-type(2),.spanlist span:nth-of-type(4){
+    color: #fc7a00;
+}
+.leftseven{
+    width: 850px;
+}
+#box5{
+    float: right;
+}
+.box5{
+    float: left;
+    width: 23px;
+    height: 23px;
+    color: #666;
+    border: 1px solid #666;
+    margin: 50px 2px;
+    border-radius: 3px;
+    text-align: center;
+    line-height: 24px;
+    cursor: pointer;
+}
+.box5:hover{
+    background: #fb7b27;
+    color: #fff;
+    border: none;
+    width: 25px;
+    height: 25px;
+}
+.numstyle{
+    background: #fb7b27;
+    color: #fff;
+    border: none;
+    width: 25px;
+    height: 25px;
+}
+/* --- */
+.right{
+    width: 280px;
+    margin-right: 20px;
+    float: right;
+}
+
+.right-center{
+    border-bottom: 1px solid #1234;
+    overflow: hidden;
+    margin-top: 20px;
+    padding-bottom: 10px;
+}
+.right-center span:nth-of-type(1){
+    float: left;
+    font-size: 17px;
+    color: #333;
+}
+.right-center span:nth-of-type(2){
+    float: right;
+    font-size: 12px;
+}
+.right-center span:nth-of-type(2) a{
+    color: #919191;
+    line-height: 26px;
+    border: 1px solid #c9cacb;
+    border-radius: 30px;
+    width: 50px;
+    height: 26px;
+    display: block;
+    text-align: center;
+}
+.right-center span:nth-of-type(2) a:hover{
+    color: #fb7b28;
+    border:1px solid #fb7b28;
+}
+
+#box222 li{
+    width: 280px;
+    margin: 20px 0px 20px 0px;
+}
+.box2{
+    overflow: hidden;
+    margin-top: 15px;
+}
+.box2one{
+    overflow: hidden;
+    width: 280px;
+}
+.box2one p:nth-of-type(1){
+    float: left;
+    font-size: 12px;
+}
+.box2one p:nth-of-type(2){
+    float: right;
+    font-size: 12px;
+}
+.box2two{
+    overflow: hidden;    
+}
+.box2two img{
+    width: 75px;
+    height: 105px;
+    float: left;
+    cursor: pointer;
+}
+.box2two div{
+    float: left;
+    margin: 5px 0px 0px 18px;
+}
+.box2two div p:nth-of-type(1){
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 5px;
+}
+.box2two div p:nth-of-type(2){
+    font-size: 12px;
+    color: #909090;
+}
+.box2two div button{
+    width: 80px;
+    height: 29px;
+    color: #fff;
+    font-size: 12px;
+    background: #fb7b28;
+    margin: 12px 0px 0px 105px;
+    cursor: pointer;
+}
+.box2two div button:hover{
+    background: #c36727;
+}
+.myclass1{
+    display: none;
+}
+.myclasss2{
+    display: block;
+}
+#rc{
+    margin: 20px 0px 30px 0px;
+    overflow: hidden;
+}
+.rc1{
+    float: left;
+}
+.rc1 img{
+    width: 70px;
+    height: 35px;
+}
+.rc2{
+    float: right;
+    margin: 0px 0px 0px 20px;
+    width: 180px;
+}
+.rc2 a{
+    color: #383838;
+    font-size: 15px;
+    display: block;
+    width: 150px;
+
+    white-space: nowrap; 
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.rc2 a:hover{
+    color: rgb(238, 110, 25);
+}
+.rc2 p{
+    font-size: 12px;
+    color: #666;
+    margin: 10px 0px 30px 0px;    
+}
+.rc2 span{
+    display: inline-block;
+    font-size: 12px;
+    color: #666;
+}
+/* ---------------------------------------- */
+/* ---------------------------------------- */
+/* ---------------------------------------- */
+/* ---------------------------------------- */
+.footer{
+    height: 331px;
+    background: #e4e4e4;
+}
+.footermain{
+    width: 1130px;
+    margin: 0px auto;
+}
+.footerone{
+    /* height: 138px; */
+    border-bottom: 1px solid #cacbcc;
+    padding: 36px 35px 45px 20px;
+    overflow: hidden;
+}
+.footertwo{
+    height: 191px;
+    border-top: 1px solid #fff;
+    padding-left: 20px;
+}
+.fo1{
+    float: left;
+    overflow: hidden;
+}
+.fo2{
+    float: left;
+    overflow: hidden;
+    margin-left: 145px;
+    margin-right: 50px;
+}
+.fo3{
+    float: left;
+    overflow: hidden;
+}
+.fo11{
+    width: 223px;
+    height: 72px;
+    background: url(../images/sprite.png)no-repeat 0px -778px;
+    float: left;
+}
+.fo12{
+    margin: 25px 0px 0px 25px;
+    float: right;
+}
+.fo12 p{
+    font-size: 12px;
+}
+.fo12 p a{
+    color: #777;
+}
+.fo12 p span{
+    margin: 0px 10px;
+}
+.fo21{
+    float: left;
+}
+.fo21 img{
+    width: 61px;
+}
+.fo22{
+    float: right;
+    margin-left: 20px;
+}
+
+.fo22 span:nth-of-type(1){
+    font-size: 15px;
+    color: #777;
+}
+.fo22 span:nth-of-type(2){
+    font-size: 12px;
+    color: #777;
+}
+.fo22 p:nth-of-type(1){
+    margin-top: 10px;
+}
+.fo22 p:nth-of-type(2){
+    font-size: 21px;
+    color: #000;
+    margin-top: 5px;
+}
+.fo3 p:nth-of-type(1){
+    margin-top: 15px;
+    font-size: 12px;
+    color: #777;
+}
+.fo3 p:nth-of-type(2){
+    font-size: 21px;
+    color: #000;
+    margin-top: 5px;
+}
+.ft1{
+    float: left;
+}
+.ft2{
+    float: right;
+}
+.ft1 a:nth-of-type(1){
+    background: url(../images/sprite.png)no-repeat 0px -510px;
+    width: 152px;
+    height: 70px;
+    display: inline-block;
+    margin-right: 20px;
+    cursor: pointer;
+}
+.ft1 a:nth-of-type(2){
+    background: url(../images/sprite.png)no-repeat 0px -580px;
+    width: 152px;
+    height: 69px;
+    display: inline-block;
+    margin-right: 20px;
+    cursor: pointer;
+}
+.ft1 a:nth-of-type(3){
+    background: url(../images/sprite.png)no-repeat 0px -649px;
+    width: 152px;
+    height: 69px;
+    display: inline-block;
+    margin-right: 20px;
+    cursor: pointer;
+}
+.ftp1{
+    font-size: 12px;
+    color: #777;
+    padding: 20px 0px 30px 0px;
+    cursor: pointer;
+}
+.ft1 p:nth-of-type(1){
+    font-size: 12px;
+    color: #777;
+    margin-bottom: 10px;
+}
+.ft2{
+    margin: 30px 30px 0px 0px;
+}
+.ft2>p{
+    font-size: 14px;
+    color: #cacbcc;
+    margin-bottom: 8px;
+}
+.ft2 p a{
+    font-size: 14px;
+}
+.ft2 button:nth-of-type(1){
+    width: 108px;
+    height: 32px;
+    background: #cacbcc;
+    font-size: 12px;
+    text-align: center;
+    margin-right: 14px;
+    cursor: pointer;
+}
+.ft2 button:nth-of-type(2){
+    width: 108px;
+    height: 32px;
+    background: #cacbcc;
+    font-size: 12px;
+    text-align: center;
+    cursor: pointer;
+}
+#zip{
+    position: relative;
+}
+.zip button div{
+    display: none;
+}
+.iphone{
+    width: 136px;
+    height: 136px;
+    background: url(../images/sprite.png)no-repeat -13px -879px;
+    position: absolute;
+    top: -139px;
+    left: 0px;
+    display: none;
+}
+.adndnroid{
+    width: 136px;
+    height: 136px;
+    background: url(../images/sprite.png)no-repeat -13px -879px;
+    position: absolute;
+    top: -139px;
+    right: 0px;
+    display: none;
+}

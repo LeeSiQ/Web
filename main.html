@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>详情页</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    
+    <div class="shade" id="shade"></div>
+    <!-- 头部 -->
+    <header>
+        <!-- 导航栏  -->
+        <div class="bg">
+            <div class="nav">
+                <div class="nav1">
+                    <h1><a href=""></a></h1>
+                    <div class="address">
+                        <p id="opencity">广州市</p>
+                        <div id="opencitydiv" class="city">
+                            <ul id="navcity" class="navcity">
+                                <li class="mycurrent1">热门</li>
+                                <li>ABCDE</li>
+                                <li>FGHJK</li>
+                                <li>LMNPQ</li>
+                                <li>RSTWX</li>
+                                <li>YZ</li>
+                            </ul>
+                            <span id="closediv">x</span>
+                            <div id="opencitybox">
+                                <ul class="opencitybox1 mycurrent2">
+                                    <li>上海市</li>
+                                    <li>北京市</li>
+                                    <li>广州市</li>
+                                    <li>深圳市</li>
+                                </ul>
+                                <ul class="opencitybox1">
+                                    <li>上海市1</li>
+                                    <li>北京市2</li>
+                                    <li>广州市3</li>
+                                    <li>深圳市4</li>
+                                </ul>
+                                <ul class="opencitybox1">
+                                    <li>上海市5</li>
+                                    <li>北京市6</li>
+                                    <li>广州市7</li>
+                                    <li>深圳市8</li>
+                                </ul>
+                                <ul class="opencitybox1">
+                                    <li>上海市5</li>
+                                    <li>北京市6</li>
+                                    <li>广州市7</li>
+                                    <li>深圳市8</li>
+                                </ul>
+                                <ul class="opencitybox1">
+                                    <li>上海市5</li>
+                                    <li>北京市6</li>
+                                    <li>广州市7</li>
+                                    <li>深圳市8</li>
+                                </ul>
+                                <ul class="opencitybox1">
+                                    <li>上海市5</li>
+                                    <li>北京市6</li>
+                                    <li>广州市7</li>
+                                    <li>深圳市8</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="nav2">
+                    <div class="navleft" id="navleft">
+                        <a href="index.html" class="navcurrent">首页</a>
+                        <a href="">电影</a>
+                        <a href="movie.html">影院</a>
+                        <a href="information.html">资讯</a>
+                        <a href="">活动</a>
+                    </div>
+                    <div class="navright" id="navright">                       
+                        <a href="" class="navcurrent" id="loginbtn">登录</a>
+                        <a href="" id="regieterbtn">免费注册</a>
+                    </div>
+                </div>
+                 <!-- 登录模态框 -->
+                <div class="login-box" id="longinbox">
+                    <div class="title">
+                        <span class="exit" id="exit">×</span>
+                        <div></div>
+                        <p>
+                            <span>————</span>
+                            <span>已有登录账号</span>
+                            <span>————</span>
+                        </p>
+                    </div>
+                    <form action="">
+                        <div class="formdiv1">
+                            <label for="userphone">账号</label>
+                            <input id="userphone" type="text" placeholder="手机号码">
+                        </div>
+                        <div class="formdiv2">
+                            <label for="userpassword">密码</label>
+                            <input id="userpassword" type="password" placeholder="登录密码">
+                        </div>
+                        <input type="submit" class="login-but" value="登录">
+                        <p class="nopassword">
+                            <span><a href="">忘记密码</a></span>
+                            <span>没有账号</span>
+                            <span><a href="">点击注册>></a></span>
+                        </p>
+                    </form>
+                </div>
+                <!-- 注册模态框 -->
+                <div id="regiterbox">
+                    <div class="title">
+                        <span class="exit" id="exit2">×</span>
+                        <div></div>
+                    </div>
+                    <form action="">
+                        <div class="rformdiv1">
+                            <label for="userphone">账号</label>
+                            <input id="userphone" type="text" placeholder="账号">
+                        </div>
+                        <div class="rformdiv2">
+                            <label for="code">验证码</label>
+                            <input id="code" type="text" placeholder="验证码">
+                        </div>
+                        <div class="rformdiv3" id="rformdiv3">
+                            <label for="message">短信验证</label>
+                            <div>
+                                <input id="message" type="text" placeholder="验证码">
+                                <input type="button" value="获取验证码">
+                            </div>
+                        </div>
+                        <div class="rformdiv4">
+                            <label for="userpassword">密码</label>
+                            <input id="userpassword" type="password" placeholder="请输入6-16位字母或数字">
+                        </div>
+                        <div class="rformdiv5">
+                            <label for="userpasswordagain">确定密码</label>
+                            <input id="userpasswordagain" type="password" placeholder="再次输入密码">
+                        </div>
+                        <input type="submit" class="regiter-but" value="注册">
+                        <p class="nopassword2">
+                            <span><a href="">已有账户？</a></span>
+                            <span><a href="">快递登录</a></span>
+                        </p>
+                    </form>
+                </div>
+           </div>
+        </div>
+    <!-- 图片 -->
+    <div class="picture">
+        <div class="img">
+            <img src="images/main1.png" alt="">
+        </div>
+    </div>
+    </header>
+
+    <!-- 中部 -->
+    <section>
+        <div class="lo1">
+            <img src="images/main2.jpeg" alt="">
+            <div class="copy"></div>
+            <span></span>
+            <p>神探大战</p>
+        </div>
+        <main>
+            <div class="left">
+                <div class="leftone">
+                    <div class="lo21"></div>
+                    <div class="lo2">
+                        <p class="lo2p1">
+                            <span></span>
+                            <span id="text1" class="text">
+                                连环命案、私刑执法、预告杀人、以暴制暴...一群号称“神探”的团伙掀起了一场香港有史以来最邪恶的犯罪！患有精神疾病的“癫佬神探”李俊（刘青云 饰）为查真凶独闯犯罪现场！以“神探夫妇”陈仪（蔡卓妍 饰）和方礼信（林峯 饰）为首的重案组也开启了与杀戮赛跑的缉凶之路！敌友之间，正邪边缘，死亡审判的真相究竟是什么？真正的“神探”到底是谁？                         
+                            </span>
+                            <span></span>
+                        </p>
+                        <span class="openc" id="opentext">展开</span>
+                        <p class="lo2p2"><span>导演：</span><span>韦家辉</span></p>
+                        <p class="lo2p3">
+                            <span>主演：</span>
+                            <span>
+                                刘青云 / 蔡卓妍 / 林峯 / 李若彤 / 谭凯 / 陈家乐 / 汤怡 / 何珮瑜 / 吴浩康 / 洪天明 / 
+                            </span>
+                        </p>
+                        <p class="lo2p4">
+                            <span>动作/ 犯罪/ 悬疑</span>
+                            <span>｜</span>
+                            <span>101分钟</span>
+                            <span>|</span>
+                            <span>2022-07-28</span>
+                            <span>|</span>
+                            <span>4,114家影院正在热映</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="lefttwo">
+                    <div id="box">
+                        <div id="boxx">
+                            <ul>
+                                <li class="current li1">07月26日 今天</li>
+                                <li class="li1">07月27日 明天</li>
+                                <li class="li1">07月28日 后天</li>
+                                <li class="li1">07月29日 星期五</li>
+                                <li class="li1">07月30日 星期六</li>
+                                <li class="li1">07月31日 星期天</li>
+                            </ul>
+                            <ul>
+                                <li class="li1">07月26日 今天</li>
+                                <li class="li1">07月27日 明天</li>
+                                <li class="li1">07月28日 后天</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div id="box2">
+                        <span id="go">></span>
+                        <span id="down">></span>
+                    </div>
+                </div>
+                <div class="leftthree">
+                    <p>特效厅</p>
+                    <span></span>
+                </div>
+                <div class="leftfour">
+                    <ul id="box3">
+                        <li class="current1">不限</li>
+                        <li>全景声厅</li>
+                        <li>普通</li>
+                        <li>中国巨厅幕</li>
+                        <li>4K大厅</li>
+                        <li>IMAX</li>
+                        <li>VIP</li>
+                        <li>情侣厅</li>
+                        <li>4D厅</li>
+                    </ul>
+                </div>
+                <div class="leftfive">
+                    <p>地区</p>
+                    <span></span>
+                </div>
+                <div class="leftsix">
+                    <ul id="box4">
+                        <li class="current1">不限</li>
+                        <li>白云区</li>
+                        <li>从化区</li>
+                        <li>番禺区</li>
+                        <li>海珠区</li>
+                        <li>花都区</li>
+                        <li>黄浦区</li>
+                        <li>荔湾区</li>
+                        <li>南沙区</li>
+                        <li>天河区</li>
+                        <li>越秀区</li>
+                        <li>增城区</li>
+                    </ul>
+                </div>
+                <div class="leftseven">
+                    <ul id="box5">
+                        <li class="current1">中影国际影城广州天河太阳新天地店 </li>
+                        <li>中影国际影城广州金沙洲店</li>
+                        <li>市一宫影院</li>
+                        <li>金逸影城IMAX（光美番禺大石店） </li>
+                        <li>广州飞扬影城-高德店 </li>
+                        <ul id="box6" style="display:none;">
+                            <li>中影国际影城广州天河太阳新天地店 </li>
+                            <li>中影国际影城广州金沙洲店</li>
+                            <li>市一宫影院</li>
+                            <li>金逸影城IMAX（光美番禺大石店） </li>
+                            <li>广州飞扬影城-高德店 </li>
+                            <li>中影国际影城广州天河太阳新天地店 </li>
+                            <li>中影国际影城广州金沙洲店</li>
+                            <li>市一宫影院</li>
+                            <li>金逸影城IMAX（光美番禺大石店） </li>
+                            <li>广州飞扬影城-高德店 </li>
+                            <li>中影国际影城广州天河太阳新天地店 </li>
+                            <li>中影国际影城广州金沙洲店</li>
+                            <li>市一宫影院</li>
+                            <li>金逸影城IMAX（光美番禺大石店） </li>
+                            <li>广州飞扬影城-高德店 </li>
+                            <li>中影国际影城广州天河太阳新天地店 </li>
+                            <li>中影国际影城广州金沙洲店</li>
+                            <li>市一宫影院</li>
+                            <li>金逸影城IMAX（光美番禺大石店） </li>
+                            <li>广州飞扬影城-高德店 </li>
+                            <li>中影国际影城广州天河太阳新天地店 </li>
+                            <li>中影国际影城广州金沙洲店</li>
+                            <li>市一宫影院</li>
+                            <li>金逸影城IMAX（光美番禺大石店） </li>
+                            <li>广州飞扬影城-高德店 </li>
+                            <li>中影国际影城广州天河太阳新天地店 </li>
+                            <li>中影国际影城广州金沙洲店</li>
+                            <li>市一宫影院</li>
+                            <li>金逸影城IMAX（光美番禺大石店） </li>
+                            <li>广州飞扬影城-高德店 </li>
+                        </ul>
+                    </ul>
+                </div>
+                <div class="open">
+                    <a href="javascript:showdiv();" id="strHref" >展开</a>
+                </div>
+                <div class="left8">
+                    <a href="">中影国际影城广州天河太阳新天地店 </a>
+                    <span>天河区马场路36号太阳新天地八楼（近中国联通）</span>
+                </div>
+                <ul class="left9">
+                    <li>放映时间</li>
+                    <li>语言版本</li>
+                    <li>放映厅</li>
+                    <li>放映时长</li>
+                    <li>市场价</li>
+                    <li>票仓价</li>
+                    <li>选座购票</li>
+                </ul>
+                <ul class="left10">
+                    <li>
+                        <div class="ppp">
+                            <div class="div1">
+                                <p>19:30</p>
+                                <p>21:11</p>
+                            </div>
+                            <div class="div2">
+                                <p>粤语</p>
+                                <p>2D</p>
+                            </div>
+                            <div class="div3">
+                                <p>6号CINITY4K杜比全景声厅</p>
+                                <p>全景声厅</p>
+                            </div>
+                            <div class="div4">
+                                <span>101</span>
+                                <span>分钟</span>
+                            </div>
+                            <div class="div5">
+                                <span>120.00</span>
+                                <span>元</span>
+                            </div>
+                            <div class="div6">
+                                <span>50.00</span>
+                                <span>元</span>
+                            </div>
+                            <div class="div7"><button>选座购票</button></div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="ppp">
+                            <div class="div1">
+                                <p>19:30</p>
+                                <p>21:11</p>
+                            </div>
+                            <div class="div2">
+                                <p>粤语</p>
+                                <p>2D</p>
+                            </div>
+                            <div class="div3">
+                                <p>6号CINITY4K杜比全景声厅</p>
+                                <p>全景声厅</p>
+                            </div>
+                            <div class="div4">
+                                <span>101</span>
+                                <span>分钟</span>
+                            </div>
+                            <div class="div5">
+                                <span>120.00</span>
+                                <span>元</span>
+                            </div>
+                            <div class="div6">
+                                <span>50.00</span>
+                                <span>元</span>
+                            </div>
+                            <div class="div7"><button>选座购票</button></div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="ppp">
+                            <div class="div1">
+                                <p>19:30</p>
+                                <p>21:11</p>
+                            </div>
+                            <div class="div2">
+                                <p>粤语</p>
+                                <p>2D</p>
+                            </div>
+                            <div class="div3">
+                                <p>6号CINITY4K杜比全景声厅</p>
+                                <p>全景声厅</p>
+                            </div>
+                            <div class="div4">
+                                <span>101</span>
+                                <span>分钟</span>
+                            </div>
+                            <div class="div5">
+                                <span>120.00</span>
+                                <span>元</span>
+                            </div>
+                            <div class="div6">
+                                <span>50.00</span>
+                                <span>元</span>
+                            </div>
+                            <div class="div7"><button>选座购票</button></div>
+                        </div>
+                    </li>
+                </ul>
+                <div class="bottom"></div>
+            </div>
+
+            <div class="right"> 
+                <div class="right-center">
+                    <span>影片热度榜</span>
+                    <span><a href="">更多</a></span>
+                </div>
+                <div class="right-bottom">
+                    <ul id="box222">
+                        <li>
+                            <div class="box2one myclass1">
+                                <p>峰爆</p>
+                                <p>14,276人关注</p>
+                            </div>
+                            <div class="box2two myclass2">
+                                <img src="images/x1.jpeg" alt="">
+                                <div>
+                                    <p>峰爆</p>
+                                    <p>类型：动作/剧情<br>导演/主演:李骏</p>
+                                    <button>立即购票</button>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="box2one myclass2">
+                                <p>侏罗纪世界3</p>
+                                <p>8,276人关注</p>
+                            </div>
+                            <div class="box2two myclass1">
+                                <img src="images/x2.jpeg" alt="">
+                                <div>
+                                    <p>侏罗纪世界3</p>
+                                    <p>类型：动作/科幻/冒险<br>导演/主演:科林.特莱沃若</p>
+                                    <button>立即购票</button>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="box2one myclass2">
+                                <p>神探大战</p>
+                                <p>4,276人关注</p>
+                            </div>
+                            <div class="box2two myclass1">
+                                <img src="images/x3.jpeg" alt="">
+                                <div>
+                                    <p>神探大战</p>
+                                    <p>类型：动作/犯罪/嫌疑<br>导演/主演:韦家辉</p>
+                                    <button>立即购票</button>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="box2one myclass2">
+                                <p>独行月球</p>
+                                <p>2,276人关注</p>
+                            </div>
+                            <div class="box2two myclass1">
+                                <img src="images/x4.jpeg" alt="">
+                                <div>
+                                    <p>独行月球</p>
+                                    <p>类型：喜剧/科幻<br>导演/主演:张吃鱼</p>
+                                    <button>立即购票</button>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="box2one myclass2">
+                                <p>人生大事</p>
+                                <p>492人关注</p>
+                            </div>
+                            <div class="box2two myclass1">
+                                <img src="images/x5.jpeg" alt="">
+                                <div>
+                                    <p>人生大事</p>
+                                    <p>类型：剧情/家庭<br>导演/主演:刘江江</p>
+                                    <button>立即购票</button>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="rightcenter">
+                    <div class="new">
+                        <p>热门活动</p>
+                       <span><a href="">更多</a></span>
+                    </div>
+                    <ul>
+                        <li id="rc">
+                            <div class="rc1"><img src="images/blue.jpeg" alt=""></div>
+                            <div class="rc2">
+                                <a href="">恋爱博物馆&独角兽星空艺术馆</a>
+                                <p>05月20日-12月31日</p>
+                                <span>0人关注</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                
+
+                <div class="ctright">
+                    <div class="new">
+                        <p>最新优惠</p>
+                       <span><a href="">更多</a></span>
+                    </div>
+                    <ul class="newul1">
+                        <li>
+                            <a href="">人生大事</a>
+                        </li>
+                        <li>
+                            <a href="">侏罗纪世界3</a>
+                        </li>
+                        <li>
+                            <a href="">外太空的莫扎特</a>
+                        </li>
+                        <li>
+                            <a href="">多啦A梦：大雄的宇宙小战争 2021</a>
+                        </li>
+                        <li>
+                            <a href="">神探大战</a>
+                        </li>
+                    </ul>
+                    <ul class="newul2">
+                        <li>
+                            <a href="">3.00 元</a>
+                        </li>
+                        <li>
+                            <a href="">3.00 元</a>
+                        </li>
+                        <li>
+                            <a href="">36.00 元</a>
+                        </li>
+                        <li>
+                            <a href="">24.00 元</a>
+                        </li>
+                        <li>
+                            <a href="">18.00 元</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </main>
+    </section>
+
+    <!-- 页脚 -->
+    <div class="footer">
+        <div class="footermain">
+            <div class="footerone">
+                <div class="fo1">
+                    <div class="fo11"></div>
+                    <div class="fo12">
+                        <p>
+                            <a href="">关于我们</a>
+                            <span>|</span>
+                            <a href="">订单状态说明</a>
+                        </p>
+                        <p>
+                            <a href="">快速购买</a>
+                            <span>|</span>
+                            <a href="">区票流程</a>
+                            <span>|</span>
+                            <a href="">注册登录</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="fo2">
+                    <div class="fo21">
+                        <img src="images/phone.jpg" alt="">
+                    </div>
+                    <div class="fo22">
+                        <p>
+                            <span>客服电话</span>
+                            <span>9:00-21:00</span>
+                        </p>
+                        <p>
+                            400-607-5588
+                        </p>
+                    </div>
+                </div>
+                <div class="fo3">
+                    <p>
+                        <span>企业团购 顾女士 ： 021-33630028</span>
+                    </p>
+                    <p>
+                        15601615579
+                    </p>
+                </div>
+            </div>
+            <div class="footertwo">
+                <p class="ftp1">沪ICP备13043883号-1 Copyright ©️2014-2018 txpc.cn 版权所有 天下票仓（上海）网络科技有限公司</p>
+                <div class="ft1">
+                    <p>友情链接</p>
+                    <a href=""></a>
+                    <a href=""></a>
+                    <a href=""></a>
+                </div>
+                <div class="ft2">
+                    <p>APP下载</p>
+                    <div id="zip">
+                        <button>IPhone <div class="iphone"></div></button>
+                        <button>Adndnroid <div class="adndnroid"></div></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

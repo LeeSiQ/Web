@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>主页</title>
+</head>
+<body>
+    <div class="shade" id="shade"></div>
+    <!-- 头部 -->
+    <header>
+        <!-- 导航栏  -->
+        <div class="bg">
+            <div class="nav">
+                <div class="nav1">
+                    <h1><a href=""></a></h1>
+                    <div class="address">
+                        <p id="opencity">广州市</p>
+                        
+                        <div id="opencitydiv" class="city">
+                            <ul id="navcity" class="navcity">
+                                <li class="mycurrent1">热门</li>
+                                <li>ABCDE</li>
+                                <li>FGHJK</li>
+                                <li>LMNPQ</li>
+                                <li>RSTWX</li>
+                                <li>YZ</li>
+                            </ul>
+                            <span id="closediv">x</span>
+                            <div id="opencitybox">
+                                <ul class="opencitybox1 mycurrent2">
+                                    <li>上海市</li>
+                                    <li>北京市</li>
+                                    <li>广州市</li>
+                                    <li>深圳市</li>
+                                </ul>
+                                <ul class="opencitybox1">
+                                    <li>上海市1</li>
+                                    <li>北京市2</li>
+                                    <li>广州市3</li>
+                                    <li>深圳市4</li>
+                                </ul>
+                                <ul class="opencitybox1">
+                                    <li>上海市5</li>
+                                    <li>北京市6</li>
+                                    <li>广州市7</li>
+                                    <li>深圳市8</li>
+                                </ul>
+                                <ul class="opencitybox1">
+                                    <li>上海市5</li>
+                                    <li>北京市6</li>
+                                    <li>广州市7</li>
+                                    <li>深圳市8</li>
+                                </ul>
+                                <ul class="opencitybox1">
+                                    <li>上海市5</li>
+                                    <li>北京市6</li>
+                                    <li>广州市7</li>
+                                    <li>深圳市8</li>
+                                </ul>
+                                <ul class="opencitybox1">
+                                    <li>上海市5</li>
+                                    <li>北京市6</li>
+                                    <li>广州市7</li>
+                                    <li>深圳市8</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="nav2">
+                    <div class="navleft" id="navleft">
+                        <a href="" class="navcurrent">首页</a>
+                        <a href="">电影</a>
+                        <a  href="movie.html">影院</a>
+                        <a href="information.html">资讯</a>
+                        <a href="">活动</a>
+                    </div>
+                    <div class="navright" id="navright">                       
+                        <a href="" class="navcurrent" id="loginbtn">登录</a>
+                        <a href="" id="regieterbtn">免费注册</a>
+                    </div>
+                </div>
+                 <!-- 登录模态框 -->
+                <div class="login-box" id="longinbox">
+                    <div class="title">
+                        <span class="exit" id="exit">×</span>
+                        <div></div>
+                        <p>
+                            <span>————</span>
+                            <span>已有登录账号</span>
+                            <span>————</span>
+                        </p>
+                    </div>
+                    <form action="">
+                        <div class="formdiv1">
+                            <label for="userphone">账号</label>
+                            <input id="userphone" type="text" placeholder="手机号码">
+                        </div>
+                        <div class="formdiv2">
+                            <label for="userpassword">密码</label>
+                            <input id="userpassword" type="password" placeholder="登录密码">
+                        </div>
+                        <input type="submit" class="login-but" value="登录">
+                        <p class="nopassword">
+                            <span><a href="">忘记密码</a></span>
+                            <span>没有账号</span>
+                            <span><a href="">点击注册>></a></span>
+                        </p>
+                    </form>
+                </div>
+                <!-- 注册模态框 -->
+                <div id="regiterbox">
+                    <div class="title">
+                        <span class="exit" id="exit2">×</span>
+                        <div></div>
+                    </div>
+                    <form action="">
+                        <div class="rformdiv1">
+                            <label for="userphone">账号</label>
+                            <input id="userphone" type="text" placeholder="账号">
+                        </div>
+                        <div class="rformdiv2">
+                            <label for="code">验证码</label>
+                            <input id="code" type="text" placeholder="验证码">
+                        </div>
+                        <div class="rformdiv3" id="rformdiv3">
+                            <label for="message">短信验证</label>
+                            <div>
+                                <input id="message" type="text" placeholder="验证码">
+                                <input type="button" value="获取验证码">
+                            </div>
+                        </div>
+                        <div class="rformdiv4">
+                            <label for="userpassword">密码</label>
+                            <input id="userpassword" type="password" placeholder="请输入6-16位字母或数字">
+                        </div>
+                        <div class="rformdiv5">
+                            <label for="userpasswordagain">确定密码</label>
+                            <input id="userpasswordagain" type="password" placeholder="再次输入密码">
+                        </div>
+                        <input type="submit" class="regiter-but" value="注册">
+                        <p class="nopassword2">
+                            <span><a href="">已有账户？</a></span>
+                            <span><a href="">快递登录</a></span>
+                        </p>
+                    </form>
+                </div>
+           </div>
+        </div>
+       <!-- 图片轮播 -->
+       <div class="img">
+            <div id="img2">
+                <!-- <div class="img3"> -->
+                    <ul id="box">
+                        <li><a href=""><img src="images/1.jpeg" alt=""></a></li>
+                        <li><a href=""><img src="images/2.jpeg" alt=""></a></li>
+                        <li><a href=""><img src="images/2.jpeg" alt=""></a></li>
+                        <li><a href=""><img src="images/4.jpeg" alt=""></a></li>
+                        <li><a href=""><img src="images/5.jpeg" alt=""></a></li>
+                        <li><a href=""><img src="images/6.jpeg" alt=""></a></li>
+                        <li><a href=""><img src="images/1.jpeg" alt=""></a></li>
+                    </ul>
+                    <ol id="list">
+                        <li class="current"></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ol>
+                    <div id="left"><span></span></div>
+                    <div id="right"><span></span></div>
+                <!-- </div> -->
+            </div>
+       </div>
+    </header>
+
+
+
+    <!-- 活动区 -->
+    <div class="main">
+
+        <!-- 顶部 -->
+        <div class="top">
+            <div class="left">
+                <div class="lefttop">
+                    <div class="lefttopone">
+                        <div class="hot" id="hot">
+                            <p class="current1">正在热映 |</p> 
+                            <p class=""> 即将上映</p>
+                        </div>
+                        <div class="hotmore">更多</div>
+                    </div>
+                    <div id="hot2">
+                        <div class="lefttoptwo current">
+                            <div class="lefttoptwo-left">
+                                <a href=""><img src="images/im1.jpeg" alt=""></a>
+                                <div></div>
+                                <div class="hottitle">人生大事</div>
+                                <div class="hotletter">
+                                    <p>殡葬师莫三妹（朱一龙 饰）在刑满释放不久后的一次出殡中，遇到了孤儿武小文（杨恩又 饰），小文的出现，意外地改变了莫三妹对职业和生活的态度。
+                                    </p>
+                                </div>
+                                <button>立即购票</button>
+                                <div class="copylttl"></div>
+                            </div>
+                            
+                            <div class="lefttoptwo-right">
+                                <ul>
+                                    <li class="li2">
+                                        <img  src="images/im2.jpeg" alt="">
+                                        <p>外太空的莫扎特</p>
+                                        <p> <button>立即购票</button></p>                                
+                                    </li>
+                                    <li class="li2">
+                                        <img  src="images/im3.jpeg" alt="" onclick="location.assign('main.html')">
+                                        <p>神探大战</p>
+                                        <p><button onclick="location.assign('main.html')">立即购票</button></p>                                
+                                    </li>
+                                    <li class="li2">
+                                        <img  src="images/im4.jpeg" alt="">
+                                        <p>侏罗纪世界3</p>
+                                        <p> <button>立即购票</button></p>
+                                    </li>
+                                    <li class="li2">
+                                        <img  src="images/im5.jpeg" alt="">
+                                        <p>海底小纵队：洞穴大冒险</p>
+                                        <p> <button>立即购票</button></p>                               
+                                     </li>
+                                    <li class="li2">
+                                        <img  src="images/im6.jpeg" alt="">
+                                        <p>隐入尘烟</p>
+                                        <p> <button>立即购票</button></p>                               
+                                     </li>
+                                    <li class="li2">
+                                        <img  src="images/im7.jpeg" alt="">
+                                        <p>冲出地球</p>
+                                        <p> <button>立即购票</button></p>                                
+                                    </li>
+                                    <li class="li2">
+                                        <img  src="images/im8.jpeg" alt="">
+                                        <p>多啦A梦：大雄的宇宙小战争 2021</p>
+                                        <p> <button>立即购票</button></p>                                
+                                    </li>
+                                    <li class="li2">
+                                        <img  src="images/im9.jpeg" alt="">
+                                        <p>珠峰队长</p>
+                                        <p> <button>立即购票</button></p>                                
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="lefttoptwo">
+                            <div class="lefttoptwo-left">
+                                <a href=""><img src="images/a1.jpeg" alt=""></a>
+                                <div></div>
+                                <div class="hottitle">戈达瓦里河</div>
+                                <div class="hotletter">
+                                    <p>Set in present day Nashik, a city in western India on the banks of the river Godavari, this is the story of a family that is coping with death - one they know about and another that they aren't prepared for.
+                                    </p>
+                                </div>
+                                <button>查看详情</button>
+                                <div class="copylttl"></div>
+                            </div>
+                            
+                            <div class="lefttoptwo-right">
+                                <ul>
+                                    <li class="li2">
+                                        <img src="images/a2.jpeg" alt="">
+                                        <p>小马宝莉：新时代</p>
+                                        <p> <button>查看详情</button></p>                                
+                                    </li>
+                                    <li class="li2">
+                                        <img src="images/a3.jpeg" alt="">
+                                        <p>迷你世界之觉醒</p>
+                                        <p> <button>查看详情</button></p>                                
+                                    </li>
+                                    <li class="li2">
+                                        <img src="images/a4.jpeg" alt="">
+                                        <p>我们遇见松花湖</p>
+                                        <p> <button>查看详情</button></p>
+                                    </li>
+                                    <li class="li2">
+                                        <img src="images/a5.jpeg" alt="">
+                                        <p>漫长的告白</p>
+                                        <p> <button>查看详情</button></p>                               
+                                     </li>
+                                    <li class="li2">
+                                        <img src="images/a6.jpeg" alt="">
+                                        <p>我们的样子像极了爱情</p>
+                                        <p> <button>查看详情</button></p>                               
+                                     </li>
+                                    <li class="li2">
+                                        <img src="images/a7.jpeg" alt="">                                        
+                                        <p>遇见你</p>
+                                        <p> <button>查看详情</button></p>                                
+                                    </li>
+                                    <li class="li2">
+                                        <img src="images/a8.jpeg" alt="">
+                                        <p>猪猪侠大电影·海洋日记</p>
+                                        <p> <button>查看详情</button></p>                                
+                                    </li>
+                                    <li class="li2">
+                                        <img src="images/a9.jpeg" alt="">
+                                        <p>永不妥协</p>
+                                        <p> <button>查看详情</button></p>                                
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="right">
+                <div class="right-top">
+                    <div>天下票仓覆盖全国5739家影院<br>我们还在继续努力......</div>
+                    <div><input type="text"  value="请输入电影名"></div>
+                </div>
+                <div class="right-center">
+                    <span>影片热度榜</span>
+                    <span><a href="">更多</a></span>
+                </div>
+                <div class="right-bottom">
+                    <ul id="box2">
+                        <li>
+                            <div class="box2one myclass1">
+                                <p>峰爆</p>
+                                <p>14,276人关注</p>
+                            </div>
+                            <div class="box2two myclass2">
+                                <img src="images/x1.jpeg" alt="">
+                                <div>
+                                    <p>峰爆</p>
+                                    <p>类型：动作/剧情<br>导演/主演:李骏</p>
+                                    <button>立即购票</button>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="box2one myclass2">
+                                <p>侏罗纪世界3</p>
+                                <p>8,276人关注</p>
+                            </div>
+                            <div class="box2two myclass1">
+                                <img src="images/x2.jpeg" alt="">
+                                <div>
+                                    <p>侏罗纪世界3</p>
+                                    <p>类型：动作/科幻/冒险<br>导演/主演:科林.特莱沃若</p>
+                                    <button>立即购票</button>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="box2one myclass2">
+                                <p>神探大战</p>
+                                <p>4,276人关注</p>
+                            </div>
+                            <div class="box2two myclass1">
+                                <img src="images/x3.jpeg" alt="">
+                                <div>
+                                    <p>神探大战</p>
+                                    <p>类型：动作/犯罪/嫌疑<br>导演/主演:韦家辉</p>
+                                    <button>立即购票</button>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="box2one myclass2">
+                                <p>独行月球</p>
+                                <p>2,276人关注</p>
+                            </div>
+                            <div class="box2two myclass1">
+                                <img src="images/x4.jpeg" alt="">
+                                <div>
+                                    <p>独行月球</p>
+                                    <p>类型：喜剧/科幻<br>导演/主演:张吃鱼</p>
+                                    <button>立即购票</button>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="box2one myclass2">
+                                <p>人生大事</p>
+                                <p>492人关注</p>
+                            </div>
+                            <div class="box2two myclass1">
+                                <img src="images/x5.jpeg" alt="">
+                                <div>
+                                    <p>人生大事</p>
+                                    <p>类型：剧情/家庭<br>导演/主演:刘江江</p>
+                                    <button>立即购票</button>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- 中部 -->
+        <div class="center">
+            <!-- 电影资讯 -->
+            <div class="centertop">
+                <div class="ctleft">
+                    <div class="ctleftone">
+                        <div class="hot">
+                            <p href="" class="hot">电影资讯</p>
+                        </div>
+                        <div class="hotmore">更多</div>
+                    </div>
+                    <ul class="ul1">
+                        <li>
+                            <img src="images/imax1.jpeg" alt="">
+                            <p>IMAX 《小行星猎人》“科影融合”媒体观影会在上影节举行 太空画卷气势恢弘 IMAX体验震撼观众资讯</p>
+                        </li>
+                        <li>
+                            <img src="images/imax2.jpeg" alt="">
+                            <p>2021年首站IMAX“不同凡响”影迷会 在沪举办 提前体验《哥斯拉大战金刚》IMAX大银幕世纪对决资讯</p>                           </p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="ctright">
+                    <div class="new">
+                        <p>最新优惠</p>
+                       <span><a href="">更多</a></span>
+                    </div>
+                    <ul class="newul1">
+                        <li>
+                            <a href="">人生大事</a>
+                        </li>
+                        <li>
+                            <a href="">侏罗纪世界3</a>
+                        </li>
+                        <li>
+                            <a href="">外太空的莫扎特</a>
+                        </li>
+                        <li>
+                            <a href="">多啦A梦：大雄的宇宙小战争 2021</a>
+                        </li>
+                        <li>
+                            <a href="">神探大战</a>
+                        </li>
+                    </ul>
+                    <ul class="newul2">
+                        <li>
+                            <a href="">3.00 元</a>
+                        </li>
+                        <li>
+                            <a href="">3.00 元</a>
+                        </li>
+                        <li>
+                            <a href="">36.00 元</a>
+                        </li>
+                        <li>
+                            <a href="">24.00 元</a>
+                        </li>
+                        <li>
+                            <a href="">18.00 元</a>
+                        </li>
+                    </ul>
+                </div>
+            </div> 
+            <div class="centerbottom">
+                <div class="centerbottomone">
+                    <div class="cbtop">
+                        <div class="hot">
+                            <p class="hot">活动</p>
+                            <span>|</span>
+                            <p>【专区】</p>
+                        </div>
+                        <div class="hotmore">更多</div>
+                    </div>
+                    <ul class="huodong">
+                        <li>
+                            <img src="images/blue.jpeg" alt="">
+                            <p>恋爱博物馆&独角兽星空艺术馆</p>
+                            <p>
+                                <button>我要参加</button>
+                                <span>0人参加</span>
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="centerbottomtwo"></div>
+            </div>
+                       
+        </div>
+
+        <!-- 底部 -->
+        <div class="bottom">
+            <div class="bottomone">
+                <div class="bo1"></div>
+                <div class="bo2">
+                    <p>热门影院 </p>
+                </div>
+                <div class="bo3"></div>
+            </div>
+            <div class="bottomtwo">
+                <ul>
+                    <li>
+                        <img src="images/m1.jpeg" alt="">
+                        <p>SFC上海影城（LaLaport上海金桥店）</p>
+                        <p>浦东新区新金桥路738号LaLaport商场6F(商场北电梯)</p>
+                        <button>选座购票</button>
+                        <p>今天放映<span>9部</span><span>余218场</span></p>
+                    </li>
+                    <li>
+                        <img src="images/m1.jpeg" alt="">
+                        <p>SFC上海影城（LaLaport上海金桥店）</p>
+                        <p>浦东新区新金桥路738号LaLaport商场6F</p>
+                        <button>选座购票</button>
+                        <p>今天放映<span>9部</span><span>余218场</span></p>
+                    </li>
+                    <li>
+                        <img src="images/m1.jpeg" alt="">
+                        <p>SFC上海影城（LaLaport上海金桥店）</p>
+                        <p>浦东新区新金桥路738号LaLaport商场6F</p>
+                        <button>选座购票</button>
+                        <p>今天放映<span>9部</span><span>余218场</span></p>
+                    </li>
+                    <li>
+                        <img src="images/m1.jpeg" alt="">
+                        <p>SFC上海影城（LaLaport上海金桥店）</p>
+                        <p>浦东新区新金桥路738号LaLaport商场6F</p>
+                        <button>选座购票</button>
+                        <p>今天放映<span>9部</span><span>余218场</span></p>
+                    </li>
+                    <li>
+                        <img src="images/m1.jpeg" alt="">
+                        <p>SFC上海影城（LaLaport上海金桥店）</p>
+                        <p>浦东新区新金桥路738号LaLaport商场6F</p>
+                        <button>选座购票</button>
+                        <p>今天放映<span>9部</span><span>余218场</span></p>
+                    </li>
+                    <li>
+                        <img src="images/m1.jpeg" alt="">
+                        <p>SFC上海影城（LaLaport上海金桥店）</p>
+                        <p>浦东新区新金桥路738号LaLaport商场6F</p>
+                        <button>选座购票</button>
+                        <p>今天放映<span>9部</span><span>余218场</span></p>
+                    </li>
+                    <li>
+                        <img src="images/m1.jpeg" alt="">
+                        <p>SFC上海影城（LaLaport上海金桥店）</p>
+                        <p>浦东新区新金桥路738号LaLaport商场6F</p>
+                        <button>选座购票</button>
+                        <p>今天放映<span>9部</span><span>余218场</span></p>
+                    </li>
+                    <li>
+                        <img src="images/m1.jpeg" alt="">
+                        <p>SFC上海影城（LaLaport上海金桥店）</p>
+                        <p>浦东新区新金桥路738号LaLaport商场6F</p>
+                        <button>选座购票</button>
+                        <p>今天放映<span>9部</span><span>余218场</span></p>
+                    </li>
+                </ul>
+            </div>
+            <p><button>更多热门影院</button></p>
+            <!-- <div class="bottomthree">
+                
+            </div> -->
+        </div>
+    </div>
+
+
+    <!-- 页脚 -->
+    <div class="footer">
+        <div class="footermain">
+            <div class="footerone">
+                <div class="fo1">
+                    <div class="fo11"></div>
+                    <div class="fo12">
+                        <p>
+                            <a href="">关于我们</a>
+                            <span>|</span>
+                            <a href="">订单状态说明</a>
+                        </p>
+                        <p>
+                            <a href="">快速购买</a>
+                            <span>|</span>
+                            <a href="">区票流程</a>
+                            <span>|</span>
+                            <a href="">注册登录</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="fo2">
+                    <div class="fo21">
+                        <img src="images/phone.jpg" alt="">
+                    </div>
+                    <div class="fo22">
+                        <p>
+                            <span>客服电话</span>
+                            <span>9:00-21:00</span>
+                        </p>
+                        <p>
+                            400-607-5588
+                        </p>
+                    </div>
+                </div>
+                <div class="fo3">
+                    <p>
+                        <span>企业团购 顾女士 ： 021-33630028</span>
+                    </p>
+                    <p>
+                        15601615579
+                    </p>
+                </div>
+            </div>
+            <div class="footertwo">
+                <p class="ftp1">沪ICP备13043883号-1 Copyright ©️2014-2018 txpc.cn 版权所有 天下票仓（上海）网络科技有限公司</p>
+                <div class="ft1">
+                    <p>友情链接</p>
+                    <a href=""></a>
+                    <a href=""></a>
+                    <a href=""></a>
+                </div>
+                <div class="ft2">
+                    <p>APP下载</p>
+                    <div id="zip">
+                        <button>IPhone <div class="iphone"></div></button>
+                        <button>Adndnroid <div class="adndnroid"></div></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="js/myjavascript.js"></script>
+</body>
+</html>
