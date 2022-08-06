@@ -409,6 +409,7 @@ section{
 .left>div:nth-of-type(1){
     font-size: 20px;
     line-height: 40px;
+    margin: 0px 15px;
 }
 .hotim li{
     margin: 10px;

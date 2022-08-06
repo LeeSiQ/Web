@@ -114,7 +114,20 @@ exit2.onclick=function(e) {
 
 
 
-
+//排行榜
+var div1 = document.getElementsByClassName('box2one')
+var div2 = document.getElementsByClassName('box2two')
+var list1 = document.getElementById('box222').children
+for(var i=0; i<div1.length; i++){
+    list1[i].onmouseenter=function(){
+        for(var j=0; j<div1.length; j++){
+            div1[j].style.display='block'  
+            div2[j].style.display='none'
+        }
+        this.children[0].style.display='none'
+        this.children[1].style.display='block'
+    }
+}
 
 
 
